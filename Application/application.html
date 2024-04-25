@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="application.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="form.html" method="POST">
+        <h1>Loan Application</h1>
+        <fieldset>
+          <legend>Basic Information</legend>
+          <label for="first name">First Name: </label>
+          <input type="text" name="first-name" />
+          <label for="last name">Last Name: </label>
+          <input type="text" name="last-name" />
+          
+          <label for="email address">Email:        </label>
+          <input type="email" name="email" placeholder="janedoe31@yahoo.com" />
+          <label for="telephone">Contact Number</label>
+          <input type="text" name="telephone" />
+          <br/>
+          <label for="accn">Account Number: </label>
+          <input type="text" name="accn" />
+
+          <label for="dob">Date of birth</label>
+          <input type="date" name="dob" required>
+          <br>
+
+          <label for="home address">Current Address</label>
+          <input type="text" name="address" />
+          <label for="address">Address Proof: </label>
+          <input type="file" name="address" />
+          <br>
+          <label for="aadharn">Aadhar: </label>
+          <input type="number" name="aadharn" />
+          <label for="aadhar">Aadhar: </label>
+          <input type="file" name="aadhar" />
+          <br>
+          <label for="pann">Pan: </label>
+          <input type="text" name="pann" />
+          <label for="pan">Pan: </label>
+          <input type="file" name="pan" />
+        </fieldset>
+        <fieldset>
+          <legend>Marital Status</legend>
+          <input type="checkbox" name="status" value="single">Single
+          <input type="checkbox" name="status" value="married">Married
+        </fieldset>
+        <fieldset>
+          <legend class="work">Work Information</legend>
+          <label for="occupation">Current Role</label>
+          <input type="text" name="occupation" />
+          <label for="company name">Employer Name</label>
+          <input type="text" name="company name" />
+          <label for="company location">Employer Address</label>
+          <input type="text" name="company location" />
+          <br>
+          <div style="margin-top: 10px;">
+            <label for="payslip">Pay slips: </label>
+            <input type="file" name="payslip" />
+
+            <label for="statement">Statement: </label>
+            <input type="file" name="statement" />
+          </div>
+        </fieldset>
+        <fieldset>
+            <legend>Loan Details</legend>
+            <label for="loan type">Loan Type: </label>
+            <select id="loan type">
+                <option>select</option>
+                <option>Home Loan</option>
+                <option>Vehicle Loan</option>
+                <option>Personal Loan</option>
+                <option>Gold Loan</option>
+          </select>
+          <label for="loan amount">Loan Amount</label>
+          <input type="text" name="loan amount" />
+
+          <label for="loan duration">Loan Duration</label>
+          <input type="text" placeholder="duration in months" name="loan duration" />
+        </fieldset>
+        
+        <fieldset>
+          <legend>Appointment Details</legend>
+
+          <label for="date">Date</label>
+          <input type="date" name="date" />
+
+          <label for="time">Time</label>
+          <input type="time" name="time" />
+
+          <!-- <textarea name='comment' name='comment'></textarea> -->
+      
+          <input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' />
+        </fieldset>
+      
+      <button type="submit">Book Appointment</button>
+      </form>
+</body>
+</html>

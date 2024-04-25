@@ -1,0 +1,24 @@
+body{
+    padding: 20px;
+}
+
+input[type=text], input[type=password], input[type=time], input[type=email], input[type=date], select {
+    width: 250px;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 15px;
+  }
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    border-radius: 15px;
+  }
